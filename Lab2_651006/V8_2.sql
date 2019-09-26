@@ -17,6 +17,7 @@ go
 /*
 b) Добавление поля ID
 */
+
 alter table dbo.Address 
 	add ID int identity(1,1) UNIQUE;
 go

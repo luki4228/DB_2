@@ -92,8 +92,6 @@ on
 where 
 	AT.Name = 'Main Office';
 
-select * from dbo.Address
-
 SELECT *
 FROM AdventureWorks2012.INFORMATION_SCHEMA.CONSTRAINT_TABLE_USAGE
 WHERE TABLE_SCHEMA = 'dbo' AND TABLE_NAME = 'Address';
@@ -102,8 +100,8 @@ WHERE TABLE_SCHEMA = 'dbo' AND TABLE_NAME = 'Address';
 e) Удаление ограничений 
 */
 alter table dbo.Address drop column PersonName;
-alter table dbo.Address drop constraint PK__Address__091C2A1BC3154996
-alter table dbo.Address drop constraint UQ__Address__3214EC2661E443AC
+alter table dbo.Address drop constraint PK__Address__091C2A1B9FD8CC80
+alter table dbo.Address drop constraint UQ__Address__3214EC26F78C1001
 alter table dbo.Address drop constraint ChkRemainder
 alter table dbo.Address drop constraint dfltValue
 /*
