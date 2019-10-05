@@ -11,6 +11,7 @@ as
 		T.X.value('(./Province/Region)[1]', 'NVARCHAR(3)') as CountryRegionCode
 	from @Data.nodes('/Addresses/Address') as T(X);
 return
+go
 
 declare @AddressTable table (
 		AddressID int,
